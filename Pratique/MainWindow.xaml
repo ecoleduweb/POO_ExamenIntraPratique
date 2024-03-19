@@ -19,9 +19,9 @@
         <TextBlock Grid.Column="1" Text="Terrain avec services" FontSize="20" TextAlignment="Center" Margin="20"/>
         <Button Grid.Column="1" Content="Afficher le cout" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="OnTerrainAvecServicesClick" Margin="20"/>
         <Label Grid.Column="1" Content="Branché aux égouts" VerticalAlignment="Center" Margin="20"/>
-        <CheckBox Grid.Column="1" Name="CbAvecEgouts" VerticalAlignment="Center"  />
+        <CheckBox Grid.Column="1" Name="CkBxAvecEgouts" VerticalAlignment="Center"  />
         <Label Grid.Column="1" Content="Prise 20 ampères" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20"/>
-        <CheckBox Grid.Column="1" Name="CbAvec20A" VerticalAlignment="Center" HorizontalAlignment="Right" />
+        <CheckBox Grid.Column="1" Name="CkBxAvec20A" VerticalAlignment="Center" HorizontalAlignment="Right" />
         <TextBlock Grid.Column="1" Text="0$" Name="TbTerrainAvecServices" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
     </Grid>
 </Window>

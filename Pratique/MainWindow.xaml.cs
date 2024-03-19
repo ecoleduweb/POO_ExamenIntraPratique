@@ -21,8 +21,8 @@ namespace Pratique
         public void OnTerrainAvecServicesClick(object sender, RoutedEventArgs e)
         {
             Service[] services = [
-                new Service(10, CbAvec20A.IsChecked.Value, "Electricité 20 ampères"),
-                new Service(15, CbAvecEgouts.IsChecked.Value, "Egouts")
+                new Service(10, CkBxAvec20A.IsChecked.Value, "Electricité 20 ampères"),
+                new Service(15, CkBxAvecEgouts.IsChecked.Value, "Egouts")
             ];
             var terrainAvecServices = new TerrainAvecServices(services);
             TbTerrainAvecServices.Text = terrainAvecServices.CalculerCout().ToString("0.00$");
