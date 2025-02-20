@@ -2,11 +2,13 @@
 
 public abstract class ATerrain
 {
-    protected double Cout;
+    protected double CoutDeBase;
+    protected Service[] Services = new Service[2];
 
-    public ATerrain(double cout)
+    public ATerrain(Service[] services)
     {
-        Cout = cout;
+        Services = services;
+        CoutDeBase = 30;
     }
 
     public abstract double CalculerCout();

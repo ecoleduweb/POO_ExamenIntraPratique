@@ -14,18 +14,24 @@ namespace Pratique
 
         private void OnTerrainSansServiceClick(object sender, RoutedEventArgs e)
         {
-            var terrainSauvage = new TerrainSauvage();
-            TbTerrainSansService.Text = terrainSauvage.CalculerCout().ToString("0.00$");
+            Service[] services = GetServicesFromWpfInterface();
+            var terrainSauvage = new TerrainSauvage(services);
+            TbCoutEstime.Text = terrainSauvage.CalculerCout().ToString("0.00$");
         }
 
         public void OnTerrainAvecServicesClick(object sender, RoutedEventArgs e)
         {
-            Service[] services = [
-                new Service(10, CkBxAvec20A.IsChecked.Value, "Electricité 20 ampères"),
-                new Service(15, CkBxAvecEgouts.IsChecked.Value, "Egouts")
-            ];
+            Service[] services = GetServicesFromWpfInterface();
             var terrainAvecServices = new TerrainAvecServices(services);
-            TbTerrainAvecServices.Text = terrainAvecServices.CalculerCout().ToString("0.00$");
+            TbCoutEstime.Text = terrainAvecServices.CalculerCout().ToString("0.00$");
+        }
+
+        private Service[] GetServicesFromWpfInterface()
+        {
+            return [
+                new Service(10, CkBxAvec20A.IsChecked.Value),
+                new Service(15, CkBxAvecEgouts.IsChecked.Value)
+            ];
         }
     }
 }

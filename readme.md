@@ -27,10 +27,13 @@ Voici le lien sur lucid chart : https://lucid.app/lucidchart/76288256-8168-4823-
 
 Tu dois créer une interface simple qui permet de calculer le prix d'un terrain de camping. Dans notre camping, il y a deux types principaux de terrains.
 
-1. Un terrain sans service qui est toujours 30$ sans taxes.
-2. Un terrain avec service qui est toujours 45$.
+De base, tous les terrains coûtent 30$.
 
-Le terrain avec service vient avec des services en option soit :
+1. Un terrain sauvage applique toujours le service qui est le plus cher. Le moins cher est gratuit.
+2. Un terrain avec service applique toujours le plein prix de services s'ils sont choisis.
+3. Il est possible de choisir ou non si on veut accéder au service.
+
+Voici le coût de chacun des services.
 1. Une borne d'électricité 20 ampères au coût de 10$
 2. Une connexion aux égouts au coût de 15$
 
@@ -56,12 +59,15 @@ Tu peux t'aider du lien sur lucid chart pour voir comment sont disposée les él
 
 ### La programmation des méthodes
 
-Voici quelques pistes pour t'aider à programmer ton travail.
+Voici quelques pistes pour t'aider à programmer ton travail. Lorsque tu cliques sur le bouton :
+
+1. Tu crées deux objets services que tu mets dans un tableau.
+2. Tu crées un objet terrain du bon type en passant en dans le constructeur les services. N'oublie pas l'utilisation de base:  `MonConstructeurDeMaClasseQuiHerite(Service[] services) : base(services)`
 
 Lorsque tu cliques sur le bouton pour afficher le coût, tu dois changer la valeur du TextBlock en te basant sur le coût retourné par la méthode `CalculerCout`.
+Cela va te permettre de créer un nouveau terrain avec de nouveaux services et d'ensuite calculer son coût. On va procéder de cette façon car je ne t'ai pas encore montré comment modifier les valeurs d'un objet dans un tableau.
 
 Afin de t'aider dans ta gestion des objets, **tu dois créer un nouvel objet à chaque fois que tu cliques sur le bouton** de l'interface WPF.
 
-Cela va te permettre de créer un nouveau terrain avec de nouveaux services et d'ensuite calculer son coût. On va procéder de cette façon car je ne t'ai pas encore montré comment modifier les valeurs d'un objet dans un tableau.
 
 Bonne programmation!

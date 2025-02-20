@@ -3,23 +3,21 @@ namespace Pratique;
 
 public class Service
 {
-    private double Cout;
-    private bool EstActif;
-    private string Nom;
-    public Service(double cout, bool estActif, string nom)
+    private double _cout;
+    private bool _estActif;
+    public Service(double cout, bool estActif)
     {
-        Nom = nom;
-        Cout = cout;
-        EstActif = estActif;
+        _cout = cout;
+        _estActif = estActif;
     }
 
     public double GetCout()
     {
-        return Cout;
+        return _cout;
     }
 
     public bool GetEstActif()
     {
-        return EstActif;
+        return _estActif;
     }
 }
