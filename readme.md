@@ -56,12 +56,13 @@ Tu peux t'aider du lien sur lucid chart pour voir comment sont disposée les él
 ### La création des classes
 
 À l'aide de la deuxième page sur lucid chart, je t'invite à créer les classes en te basant sur le diagramme de classe.
+Ajoutes ensuite les attributs, constructeurs et méthodes vides.
 
 ### La programmation des méthodes
 
-Voici quelques pistes pour t'aider à programmer ton travail. Lorsque tu cliques sur le bouton :
+Lorsque tu cliques sur un des bouton :
 
-1. Tu crées deux objets services que tu mets dans un tableau.
+1. Tu crées deux objets services que tu mets dans un tableau à partir de la méthode .
 2. Tu crées un objet terrain du bon type en passant en dans le constructeur les services. N'oublie pas l'utilisation de base:  `MonConstructeurDeMaClasseQuiHerite(Service[] services) : base(services)`
 
 Lorsque tu cliques sur le bouton pour afficher le coût, tu dois changer la valeur du TextBlock en te basant sur le coût retourné par la méthode `CalculerCout`.
